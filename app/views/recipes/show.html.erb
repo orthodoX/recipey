@@ -1,0 +1,21 @@
+<h1 class="title w-full text-xl text-green-900 text-center p-4 lg:text-3xl">
+  <%= @recipe.title %>
+  <%= link_to "Back", recipes_path,
+      class: "float-right border border-gray-400 hover:border-gray-800 text-black text-sm py-1 px-3 rounded-md" %>
+</h1>
+<div class="p-2">
+  <div class="image flex justify-center">
+    <%= image_tag @recipe.image_url, class: "object-cover rounded-lg" %>
+  </div>
+  <div class="text-lg text-center mt-2 lg:text-xl">
+    <% @recipe&.content_tags&.each do |tag| %>
+      <span class="text-sm m-1 font-medium bg-green-100 py-1 px-2 rounded text-green-500 align-middle">
+        <%= tag %>
+      </span>
+    <% end %>
+    <div class="content mt-2"><%= sanitize @recipe.content %></div>
+    <% if @recipe.chef_name %>
+      <div class="mt-4"><em>Recipe by: <%= @recipe.chef.name %></em></div>
+    <% end %>
+  </div>
+</div>

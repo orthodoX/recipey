@@ -8,6 +8,10 @@ Style/StringLiterals:
   ConsistentQuotesInMultiline: false
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
+RSpec/FilePath:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Enabled: false
 Metrics/AbcSize:
   Exclude:
     - "db/**/*"

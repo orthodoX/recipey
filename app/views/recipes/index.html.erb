@@ -1,0 +1,15 @@
+<h1 class="w-full text-xl text-green-900 text-center p-4 lg:text-3xl">
+  Marley Spoon recipes of the day
+</h1>
+<div class="grid grid-cols-1 lg:grid-cols-2">
+  <% @recipes.each do |recipe| %>
+    <%= link_to "/recipes/#{recipe.id}", class: "recipe block p-3 hover:text-blue-800" do %>
+      <div class="w-full">
+        <%= image_tag recipe.image_url, class: "object-cover rounded-lg hover:shadow-md" %>
+      </div>
+      <div class="w-full text-center text-lg mt-1 lg:text-xl">
+        <%= recipe.title %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

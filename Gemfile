@@ -22,6 +22,9 @@ gem "jbuilder", "~> 2.7"
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem "contentful"
+gem "redcarpet"
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -29,6 +32,7 @@ gem "jbuilder", "~> 2.7"
 gem "bootsnap", ">= 1.4.4", require: false
 
 group :development, :test do
+  gem "dotenv-rails"
   gem "pry-rails"
   gem "rspec-rails", "~> 4.0.2"
   gem "rubocop", "~> 1.0", require: false
