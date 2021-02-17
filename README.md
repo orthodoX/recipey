@@ -22,8 +22,8 @@ The one thing I realized while I was coding this exercise is that testing will b
 
 The only way to do a proper mocking would be I guess to use the `vcr` gem, and when I checked the contentful gem source code, I realized [they used the same approach](https://github.com/contentful/contentful.rb/blob/master/spec/entry_spec.rb). VCR has it's own downside as well, if it's used to much in the test suite, it will drastically impact the overall execution time.
 
-So, to conclude it, I decided not to mock the tests at all (which makes execution a bit slower), since doing it properly would take me much more time which I didn't plan for this exercise. Which means the tests are not perfect, but they should be enough to give you a clue how do I write them generally.
+So, at the end, I decided not to mock the tests at all (which makes execution a bit slower), since doing it properly would take me much more time which I didn't plan for this exercise. Which means the tests are not perfect, but they should be enough to give you a clue how do I write them generally.
 
 ## Conclusion
 
-If you guys have any additional questions regqrding my solution, I'd be more than happy to discuss it with you. Happy reviewing!
+If you guys have any additional questions regarding my solution, I'd be more than happy to discuss them with you. Happy reviewing!
