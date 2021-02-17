@@ -4,7 +4,7 @@ This is the exercise for the [Marley Spoon coding challenge](https://gist.github
 
 ## Environment and setup
 
-The app was done in Ruby `2.7.2` and Rails `6.1.2`. Just do a typical `bundle install` and `bin/rails s` to start the app (the binstubs are actually faster than `bundle exec` 🙃)
+The app was done in Ruby `2.7.2` and Rails `6.1.2`. Just do a typical `bundle install` and `bin/rails s` to start the app (the binstubs are actually faster than `bundle exec` 🙃). The main endpoint is [http://localhost:3000/recipes](http://localhost:3000/recipes)
 
 ## Formatting and testing
 
